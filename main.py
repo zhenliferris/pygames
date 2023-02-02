@@ -20,7 +20,7 @@ def main():
         elif menu == "2":
             guessnumber()
         elif menu == "3":
-            tosscomins()
+            tosscoins()
         elif menu == "0":
             break
 
