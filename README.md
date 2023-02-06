@@ -1,1 +1,2 @@
-The project is created to practice Python programming and become familiar with git bash and git hub.
+The project is created to practice Python programming
+I will try to build some samll python games for playing with numbers
