@@ -20,8 +20,8 @@ def bagels():
     Fermi   one digit is correct and in the wrong position.
     Bagels  No digit is correct.
     Example:
-    secret number: 2a8 
-    guess number: 8a6
+    secret number: 2A8 
+    guess number: 8A6
     clues: Fermi Pico.'''.format(num_digits))
 
     # unlimited main(first) loop unless the user choose not
@@ -43,7 +43,7 @@ def bagels():
             # restrain the input is 3 digits long HEX number, it needs to be modified for other digits
             while len(guess) != num_digits or not guess[0] in num_rang or not guess[1] in num_rang or not guess[2] in num_rang:
                 print('Guesses #{}:'.format(num_guesses))
-                guess = input('> ').lower()  # avoding Capital Letter issue
+                guess = input('> ').upper()  # avoding lower Letter issue
 
             clues = get_clues(guess, secret_number)
             print(clues)
@@ -70,7 +70,7 @@ def bagels():
 
 
 def get_secret_number():
-    numbers = list('0123456789abcdef')
+    numbers = list('0123456789ABCDEF')
     random.shuffle(numbers)
     secret_number = ''
     for i in range(num_digits):
