@@ -35,7 +35,7 @@ def bagels():
         num_guesses = 1
 
         # HEX number contains 0 to F
-        num_rang = list("0123456789abcdef")
+        num_rang = list("0123456789ABCDEF")
 
         # second loop untill guess counter reaches limit or guessed the correct number
         while num_guesses <= max_guesses:
