@@ -21,6 +21,7 @@ def main():
             guessnumber()
         elif menu == "3":
             tosscoins()
+            print("empty slot")
         elif menu == "0":
             break
 
