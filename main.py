@@ -7,7 +7,8 @@ def main():
     while True:
 
         menu = ""
-        while not menu in list("0123"):
+        menuoptions = [str(x) for x in range(4)]
+        while not menu in menuoptions:
             print("""
         1. Bagels game
         2. Guess number game
