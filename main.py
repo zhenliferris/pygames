@@ -4,7 +4,8 @@ from apps.tosscoins import tosscoins
 
 
 def main():
-    while True:
+    active = True
+    while active:
 
         menu = ""
         menuoptions = [str(x) for x in range(4)]
@@ -22,9 +23,8 @@ def main():
             guessnumber()
         elif menu == "3":
             tosscoins()
-            print("empty slot")
         elif menu == "0":
-            break
+            active = False
 
 
 if __name__ == '__main__':
